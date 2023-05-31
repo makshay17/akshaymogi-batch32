@@ -1,0 +1,36 @@
+<html>
+
+<head>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div> 
+         <h1 id="card">Profile</h1>
+    </div>
+    <div >
+        <img src="akshay.jpg" alt="Avatar">
+        
+    </div>
+
+    <p id="lasthobbie"></p>
+
+    <script>
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            EmailID: "akshaymogi@gmail.com",
+            gender: "male",
+            city: "Mckinney",
+            State: "Texas",
+            Pincode: "57070",
+            hobbie: ["Reading", "Playing Cricket", "Listing Music"]
+        };
+
+        document.getElementById("lasthobbie").innerHTML = person.hobbie;
+    </script>
+</body>
+
+</html>

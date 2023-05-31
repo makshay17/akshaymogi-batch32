@@ -1,0 +1,9 @@
+img{
+    height: 250;
+    width: 250;
+    border-radius: 50%;
+}
+
+.card{
+    text-align: center;
+}
