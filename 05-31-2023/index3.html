@@ -1,17 +1,15 @@
 <html>
 
 <head>
-   
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div> 
-         <h1 id="card">Profile</h1>
-    </div>
-    <div >
+    <h1 id="card">Profile</h1>
+    <div>
         <img src="akshay.jpg" alt="Avatar">
-        
+
     </div>
 
     <p id="lasthobbie"></p>
@@ -26,10 +24,11 @@
             city: "Mckinney",
             State: "Texas",
             Pincode: "57070",
-            hobbie: ["Reading", "Playing Cricket", "Listing Music"]
+            hobbie: ["Reading", "Playing Cricket", "Listing Music" ]
         };
 
-        document.getElementById("lasthobbie").innerHTML = person.hobbie;
+        console.log(person.hobbie[0]);
+     
     </script>
 </body>
 
