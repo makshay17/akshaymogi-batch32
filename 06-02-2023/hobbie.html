@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        const hobbies = [];
+        hobbies[0] = "Reading";
+        hobbies[1] = "Playing Cricket";
+        hobbies[2] = "Listning Music";
+
+        function hobbie() {
+            return hobbies;
+        }
+        console.info(hobbie());
+
+        function hobbieAdd(abc) {
+            hobbies.push(abc);
+            return hobbies;
+        }
+        console.info(hobbieAdd("Biking"));
+
+        function hobbieDelete(xyz) {
+            hobbies.pop(xyz);
+            return hobbies;
+        }
+        console.info(hobbieDelete()); 
+    </script>
+</head>
+
+</html>
