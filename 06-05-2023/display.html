@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Profile</h1>
+    <label>FirstName</label>
+    <input type="text" id="newProfile"><br>
+    <label>LastName</label>
+    <input type="text" id="newProfile1"> <br>
+    <label>DOB</label>
+    <input type="date" id="newProfile2"> <br>
+    <label>EmailID</label>
+    <input type="email" id="newProfile3"> <br>
+    <label>PhoneNumber</label>
+    <input type="number" id="newProfile4"> <br>
+    <button type="button" onclick="Submit()">Submit </button>
+    <p id="Profile1"></p>
+
+    <script>
+
+        function Submit() {
+            var innerHTM = ""
+            inputvalue = document.getElementById("newProfile").value;
+            inputvalue1 = document.getElementById("newProfile1").value;
+            inputvalue2 = document.getElementById("newProfile2").value;
+            inputvalue3 = document.getElementById("newProfile3").value;
+            inputvalue4 = document.getElementById("newProfile4").value;
+
+            innerHTM += inputvalue + "<br>" + inputvalue1 + "<br>" + inputvalue2 + "<br>" + inputvalue3 + "<br>" + inputvalue4;
+            document.getElementById("Profile1").innerHTML = innerHTM;
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
