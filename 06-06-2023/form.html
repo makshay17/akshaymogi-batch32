@@ -1,0 +1,67 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Profile</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label>FirstName</label></td>
+                <td><input type="text" id="newProfile"></td>
+            </tr>
+            <tr>
+                <td><label>LastName</label></td>
+                <td><input type="text" id="newProfile1"> </td>
+            </tr>
+            <tr>
+                <td><label>DOB</label></td>
+                <td><input type="date" id="newProfile2"> </td>
+            </tr>
+            <tr>
+                <td><label>EmailID</label></td>
+                <td><input type="email" id="newProfile3"> </td>
+            </tr>
+            <tr>
+                <td><label>PhoneNumber</label></td>
+                <td><input type="number" id="newProfile4"></td>
+            </tr>
+        </table>
+        <h2>Hobbies</h2>
+        <label>Playing Cricket</label>
+        <input type="checkbox" name="box" value="Playing Cricket">
+        <label>Listning Music</label>
+        <input type="checkbox" name="box" value="Listning Music">
+        <label>Reading</label>
+        <input type="checkbox" name="box" value="Reading">
+    </form>
+    <button type="submit" onclick="Submit()">Submit </button>
+    <p id="Profile1"></p>
+
+    <script>
+
+        function Submit() {
+            innerHTM = ""
+            checkBox = document.getElementsByName("box");
+            for (i = 0; i < checkBox.length; i++) {
+                if (checkBox[i].checked) {
+                    innerHTM += checkBox[i].value+"<br>";
+                }
+            }
+
+            input = document.getElementById("newProfile").value;
+            input1 = document.getElementById("newProfile1").value;
+            input2 = document.getElementById("newProfile2").value;
+            input3 = document.getElementById("newProfile3").value;
+            input4 = document.getElementById("newProfile4").value;
+
+            innerHTM += input + "<br>" + input1 + "<br>" + input2 + "<br>" + input3 + "<br>" + input4;
+            document.getElementById("Profile1").innerHTML = innerHTM;
+        }
+
+
+    </script>
+</body>
+
+</html>
