@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+numbers={"val":[2,4,6,1,3,7]}
+numbers.__proto__.one=function (){
+  return this.val[1]
+}
+numbers.__proto__.two=function (){
+  this.val.sort()
+}
+console.log(numbers.one())
+numbers.two()
+console.log(numbers.val[1])
+</script>
+</body>
+</html>
