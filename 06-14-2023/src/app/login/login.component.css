@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+.row label{
+    flex-basis: 10%;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.log label{
+    flex-basis: 10%;
+}

@@ -1,0 +1,20 @@
+.top{
+background-color: blue;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    min-width: 257px;
+    margin-bottom: -10px;
+
+}
+.aksh{
+   place-self:flex-start ;
+}
