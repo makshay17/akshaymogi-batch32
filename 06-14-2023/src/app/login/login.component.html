@@ -1,0 +1,21 @@
+      <div>
+        <form class="second">
+          <div class="log">
+          <label>UserName</label>
+        <input type="text" name="txt" placeholder="First Name" [(ngModel)]="second.UserName">
+      </div> <br>
+    <div class="log">
+          <label>Password</label>
+          <input type="password" name="pswd" placeholder="password" [(ngModel)]="second.Password"> 
+        </div><br><br>
+        <div>
+          <button (click)="onLogin()">Login</button>
+        </div>
+        
+        <div [innerHtml]="display1"></div>
+        </form>
+
+      </div>
+      
+    
+

@@ -1,0 +1,31 @@
+<header class="top">
+  <h1 class="aksh">
+    Akshay Mogi
+  </h1>
+  <!-- <div class="qwer">
+    <input type="text" placeholder="Search" />
+  </div>
+  <ol class="menu">
+    <li> Profile</li>
+    <li> Login</li>
+    <li> Signup</li>
+  </ol> -->
+
+  <div>
+    <ul class="menu">
+       <li [routerLink]="['/profile']" routerLinkActive="router-link-active" >
+          profile
+       </li>
+       <li [routerLink]="['/login']" routerLinkActive="router-link-active" >
+          Login
+       </li>
+       <li>
+          Logout
+       </li>
+       <li [routerLink]="['/signup']" routerLinkActive="router-link-active" >
+          Signup
+       </li>
+    </ul>
+    
+    </div>
+</header>

@@ -1,0 +1,9 @@
+.row{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+.row label{
+    flex-basis: 10%;
+}

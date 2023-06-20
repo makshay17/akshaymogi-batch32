@@ -1,0 +1,38 @@
+
+
+<form  *ngIf="Profile">
+  <div class="container">
+  
+   
+    <label><b>FirstName</b></label>
+    <input type="text" placeholder="Enter name" name="FirstName" [(ngModel)]="FirstName" />
+
+    <label><b>LastName</b></label>
+    <input type="text" placeholder="Enter name" name="LastName" [(ngModel)]="LastName"/>
+
+    <div>
+      <button (click)="onProfile()">ProfileLogin</button>
+    </div>
+  </div>
+  
+</form>
+<div *ngIf="output">
+    <table>
+        <tr>
+            <th>
+                fname
+            </th>
+            <td>
+                {{FirstName}}
+            </td>
+        </tr>
+        <tr>
+            <th>
+                lname
+            </th>
+            <td>
+                {{LastName}}
+            </td>
+        </tr>
+    </table>
+</div>
